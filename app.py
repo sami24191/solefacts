@@ -1,6 +1,6 @@
 import streamlit as st
 import json
-from utils.search_post import search_posts
+from utils.search_post import search_post
 
 # Load Reddit data
 with open("data/solefacts_tagged_data.json", "r") as f:
