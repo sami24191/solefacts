@@ -13,7 +13,7 @@ import json
 from utils.search_post import search_post
 
 # Load Reddit data
-with open("data/reddit_data.json", "r") as f:
+with open("data/solefacts_tagged_data.json", "r") as f:
     reddit_posts = json.load(f)
 
 st.title("SoleFacts: Search Running Shoe Feedback")
