@@ -1,6 +1,6 @@
 import streamlit as st
 import json
-from utils.search_post import search_posts  # Make sure the function is named search_posts
+from utils.search_post import search_posts  # Make sure your function is named search_posts
 
 # Load Reddit data
 with open("data/solefacts_tagged_data.json", "r") as f:
@@ -11,10 +11,10 @@ st.title("SoleFacts: Search Running Shoe Feedback")
 query = st.text_input("What do you want to know?")
 
 if query:
-    # Use query as model keyword for now
+    # Pass the query string as the model filter
     results = search_posts(
         posts=reddit_posts,
-        model=query,         # User input drives the model filter
+        model=query,           # 👈 using user input as the model keyword
         feature=None,
         user_type=None,
         sentiment=None
