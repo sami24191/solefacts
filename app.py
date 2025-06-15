@@ -12,7 +12,7 @@ query = st.text_input("What do you want to know?")
 
 if query:
     # Pass the query string as the model filter
-    results = search_posts(
+    results = search_post(
         posts=reddit_posts,
         model=query,           # 👈 using user input as the model keyword
         feature=None,
