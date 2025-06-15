@@ -1,0 +1,5 @@
+%%writefile requirements.txt
+streamlit
+llama-index-core
+llama-index-llms-together
+sentence-transformers
