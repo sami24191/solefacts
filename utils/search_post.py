@@ -1,6 +1,6 @@
 # utils/search_post.py
 
-def search_posts(posts, model=None, feature=None, user_type=None, sentiment=None, limit=5):
+def search_post(posts, model=None, feature=None, user_type=None, sentiment=None, limit=5):
     """
     Filter Reddit posts based on model name, feature, user type, and sentiment.
 
